@@ -1,0 +1,19 @@
+# 2026-11-21 — Next Rupee Planner at Claude Code Impact Lab Mumbai
+
+## Shipped
+Next Rupee Planner at the Claude Code Impact Lab hackathon in Mumbai, with Prathik Shetty, on a synthetic BMC road-repair dataset. It ranks every open road issue in a ward by risk and shows what the remaining budget should fix first, with the arithmetic behind each score. Ward F/N (Matunga, Sion, Wadala): ₹10.9 lakh left, 39 open issues, ₹14 lakh to fix them all, so 25 get funded and 14 wait. My side: UI, the audit, contractor and complaint-trail pages that back the planner up, and the Guide tour and cross-links between them. Live at rupeespeaks.vercel.app. Also recorded a 93 s ward F/N walkthrough (AI voiceover, driven through the Guide). LinkedIn post and thumbnail are ready, not posted yet.
+
+## Blocked
+The live Guide still opens the old stops until Prathik merges my branch into dev.
+
+## Fixed-how
+1. The Guide's Dadar stop opened a complaint from ward F/S, so a one-ward demo jumped wards. Repointed it to the F/N complaint and the audit stop to the F/N-filtered page.
+2. The Audit page's Show button is a full reload and wiped my on-screen annotations mid-take. Sent the Guide straight to the filtered URL instead of clicking Show.
+3. First export cut the end card because ffmpeg followed the shorter voice track. Padded the audio to the video length.
+4. Thumbnail headline was ward numbers and did not say what we built. Now it reads "A budget planner for Mumbai's monsoon roads".
+
+## Avoid next time
+Pick the demo ward first and check every Guide stop lands in it. Open any thumbnail or post with what the thing is, numbers second.
+
+## Next
+Prathik merges my branch. Post the video on LinkedIn with the live link and repo in the first comment. Then ASHA Awaaz: Supabase prod fix (Vercel env, redeploy), Round 2 build submission on 29 Nov.
